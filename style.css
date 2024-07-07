@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.whoIsWatching {
+    width: 100vw;
+    min-height: 100vh;
+    background-color: #141414;
+}
+
+.logo-section {
+    width: 95vw;
+    margin: auto;
+    height: 5rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.logo-section a img {
+    width: 10rem;
+    height: 2.5rem;
+    cursor: pointer;
+}
+
+.main-div {
+    width: 100vw;
+    height: 80vh;
+    background-color: rosybrown;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.main-div h1 {
+    font-size: 4.8rem;
+    letter-spacing: 0.2rem;
+}
+
+.memberDiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.memberDiv .btn,
+.addIcon {
+    height: 10vw;
+    min-height: 8.4rem;
+    max-height: 20rem;
+    width: 10vw;
+    min-width: 8.4rem;
+    max-width: 20rem;
+    border-radius: 0.4rem;
+    border: none;
+    outline: none;
+    margin-top: 3rem;
+    margin-right: 2.5rem;
+    position: relative;
+    cursor: pointer;
+}
+
+.memberDiv .btn:nth-child(1) {
+    background-image: url('./user1.png');
+}
+
+.memberDiv .btn:nth-child(2) {
+    background-image: url('./user2.png');
+}
+
+.memberDiv .btn:nth-child(3) {
+    background-image: url('./user3.png');
+}
+
+.memberDiv .btn:hover {
+    box-shadow: inset 0 0 0 5px rgba(255, 255, 255, 0.9);
+}
+
+.memberDiv .btn span {
+    width: inherit;
+    background-color: red;
+    position: absolute;
+    bottom: -2.5rem;
+    left: 0;
+    text-transform: capitalize;
+    color: rgb(153, 153, 153);
+    font-size: 1.8rem;
+}
+
+.fa-plus-circle {
+    font-size: 7vw;
+    color: grey;
+    opacity: 0.8;
+}
+
+.addIcon {
+    background-color: transparent;
+}
+
+.addIcon:hover {
+    background-color: #fff;
+}
+
+.addIcon:hover > .fa-plus-circle {
+    opacity: 1;
+}
+
+.manageProfile {
+    border: 1px solid; /* Added 'solid' for border style */
+    color: grey; /* Corrected from semicolon to colon */
+    text-transform: uppercase; /* Corrected from semicolon to colon */
+    padding: 0.5rem 1.5rem;
+    letter-spacing: 0.5rem; /* Changed to 0.5rem for a more reasonable spacing */
+    font-size: 1.8rem;
+    margin-top: 8.5rem;
+    margin-bottom: 2rem; /* Added margin-bottom */
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.manageProfile:hover {
+    border: 1px solid #fff;
+    color: #fff;
+}
